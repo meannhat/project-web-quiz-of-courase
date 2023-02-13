@@ -1,12 +1,23 @@
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import React from 'react';
+import Header from './components/Header/Header';
+import { Outlet, Link } from 'react-router-dom';
 
 const App = () => {
   return(
-    <div className="App">
-      Hello World
-      <button className='btn btn-primary'>Test</button>
+    <div className="app-container">
+      <div className='header-container'>
+        <Header />
+      </div>
+      <div className='main-container'>
+        <div className='sidebar-container'>
+
+        </div>
+        <div className='app-content'>
+          <Outlet/>
+        </div>
+      </div>
     </div>
   );
 }
