@@ -5,3 +5,50 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@media (min-width: 1900px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1800px !important;
+    }
+}
+.app-container{
+    .header-container{
+        
+    }
+}
+.app-container{
+    .header-container{ 
+        .btnLogin{
+            border: 1px solid black;
+            margin: 0px 15px;
+        }
+        .btnSignup{
+            background-color: rgb(65, 65, 65);
+            color: white;
+            &:hover{
+                background-color: black;
+            }
+        }
+        .navbar{
+            padding-top: 20px;
+            z-index: 10;
+            background-color: rgba(0,0,0,0) !important;
+            .nav-link{
+                &.active{
+                    color: rgb(10, 208, 234);
+                }
+            }
+        } 
+    }
+    .homepage-container{
+        .homepage-content{
+            padding: 100px;
+            position: relative;
+            width: 50%;
+        }
+    }
+}
+video {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
